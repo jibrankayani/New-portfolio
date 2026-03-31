@@ -2213,3 +2213,41 @@ section {
         padding: 1rem !important;
     }
 }
+
+/* ================================
+   EMAIL LINK COLOR — match LinkedIn
+================================ */
+.info-value a,
+.info-value a:visited {
+    color: var(--primary-color) !important;
+    text-decoration: none;
+}
+.info-value a:hover {
+    text-decoration: underline;
+}
+
+/* ================================
+   PROJECT DETAILS BUTTON
+================================ */
+.btn-details {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 1rem;
+    padding: 8px 18px;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+.btn-details:hover {
+    background: rgba(74, 158, 255, 0.12);
+    box-shadow: 0 4px 16px rgba(74, 158, 255, 0.2);
+}
