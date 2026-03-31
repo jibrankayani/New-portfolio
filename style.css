@@ -1223,8 +1223,8 @@ section {
 
 .project-image {
     position: relative;
-    height: 200px;
-    background: linear-gradient(135deg, var(--soldermask-green), #0a1f15);
+    height: 220px;
+    background: #0a1020;
     overflow: hidden;
 }
 
@@ -1236,6 +1236,7 @@ section {
     justify-content: center;
     color: var(--primary-color);
     transition: var(--transition-smooth);
+    overflow: hidden;
 }
 
 .project-card:hover .project-placeholder {
