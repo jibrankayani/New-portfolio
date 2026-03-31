@@ -8,51 +8,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() { emailjs.init("XrGiJgGkPSXzS7G9-"); })();
+        (function() {
+            emailjs.init("XrGiJgGkPSXzS7G9-"); // Your public key
+        })();
     </script>
 </head>
 <body>
+    <!-- Circuit Background Animation -->
     <canvas id="circuit-canvas"></canvas>
-
-    <!-- NAV -->
+    
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-name"><svg class="logo-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="8" y="8" width="8" height="8"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>Engineer</span>
+                <span class="logo-name">JGK</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">HOME</a></li>
-                <li><a href="#about" class="nav-link">ABOUT</a></li>
-                <li><a href="#experience" class="nav-link">EXPERIENCE</a></li>
-                <li><a href="#skills" class="nav-link">SKILLS</a></li>
-                <li><a href="#projects" class="nav-link">PROJECTS</a></li>
-                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="nav-toggle"><span></span><span></span><span></span></div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
-    <!-- HERO -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <div class="hero-role-line">
-                <span class="role-tag">HARDWARE DESIGN ENGINEER</span>
-                <span class="role-divider">|</span>
-                <span class="role-tag">PCB DESIGNER</span>
+            <div class="hero-subtitle">
+                <span class="typing-indicator">●</span>
+                <span>Hardware & PCB Design Engineer</span>
             </div>
             <h1 class="hero-title">
                 <span class="hero-name">JIBRAN GUL KAYANI</span>
             </h1>
             <p class="hero-description">
-                Transforming electrical concepts into precision-engineered, 
-                manufacturable circuit boards — from schematic to final PCB layout.
+                Crafting precision-engineered hardware solutions from schematic to silicon. 
+                Specialized in mixed-signal PCB design, embedded systems, and IoT device development.
             </p>
-            <div class="hero-typing-wrapper">
-                <span class="hero-typing-label">SPECIALIZATION: </span>
-                <span class="hero-typing-text" id="heroTyping"></span><span class="typing-cursor">|</span>
-            </div>
             <div class="hero-stats">
                 <div class="stat-item">
                     <span class="stat-number">6+</span>
@@ -62,119 +65,129 @@
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">
                     <span>View Projects</span>
-                    <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m-6-6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10h12m-6-6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
             </div>
         </div>
         <div class="hero-visual">
             <div class="pcb-card">
-                <div class="pcb-layer layer-top"><img src="pcb1.png" alt="PCB Design 1" class="pcb-image"></div>
-                <div class="pcb-layer layer-middle"><img src="pcb2.png" alt="PCB Design 2" class="pcb-image"></div>
-                <div class="pcb-layer layer-bottom"><img src="pcb3.png" alt="PCB Design 3" class="pcb-image"></div>
-                <div class="component comp-1"></div><div class="component comp-2"></div>
-                <div class="component comp-3"></div><div class="component comp-4"></div>
-                <div class="trace trace-1"></div><div class="trace trace-2"></div><div class="trace trace-3"></div>
+                <!-- Your actual PCB designs -->
+                <div class="pcb-layer layer-top">
+                    <img src="pcb1.png" alt="PCB Design 1" class="pcb-image">
+                </div>
+                <div class="pcb-layer layer-middle">
+                    <img src="pcb2.png" alt="PCB Design 2" class="pcb-image">
+                </div>
+                <div class="pcb-layer layer-bottom">
+                    <img src="pcb3.png" alt="PCB Design 3" class="pcb-image">
+                </div>
+                <div class="component comp-1"></div>
+                <div class="component comp-2"></div>
+                <div class="component comp-3"></div>
+                <div class="component comp-4"></div>
+                <div class="trace trace-1"></div>
+                <div class="trace trace-2"></div>
+                <div class="trace trace-3"></div>
             </div>
         </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">WHO I AM</span>
+                <span class="section-label">Who I Am</span>
                 <h2 class="section-title">About Me</h2>
             </div>
             <div class="about-content">
-                <!-- Col 1: Photo (spans 2 rows) -->
-                <div class="about-image">
+                <div class="about-image" data-aos="fade-right">
                     <div class="image-frame">
-                        <div class="frame-corner tl"></div><div class="frame-corner tr"></div>
-                        <div class="frame-corner bl"></div><div class="frame-corner br"></div>
+                        <div class="frame-corner tl"></div>
+                        <div class="frame-corner tr"></div>
+                        <div class="frame-corner bl"></div>
+                        <div class="frame-corner br"></div>
                         <img src="profile.png" alt="Jibran Gul Kayani" class="profile-img" id="profileImage">
                     </div>
                 </div>
-                <!-- Col 2 Row 1: Bio text -->
                 <div class="about-text">
-                    <p class="about-intro">I'm a motivated Hardware and PCB Design Engineer with hands-on experience in schematic design, PCB layout, and hardware validation. My passion lies in transforming complex electrical concepts into tangible, manufacturable circuit boards.</p>
-                    <p class="about-detail">With expertise in industry-standard tools like <strong>Altium Designer</strong>, <strong>KiCad</strong>, <strong>EasyEDA</strong>, and <strong>Proteus</strong>, I specialize in creating robust hardware solutions for environmental monitoring systems and medical devices.</p>
-                    <div class="cv-buttons">
-                        <a href="CV_Jibran.pdf" target="_blank" class="btn btn-primary cv-btn">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                            View CV
-                        </a>
-                        <a href="CV_Jibran.pdf" download="Jibran_Gul_Kayani_CV.pdf" class="btn btn-secondary cv-btn">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                            Download CV
-                        </a>
+                    <p class="about-intro">
+                        I'm a motivated Hardware and PCB Design Engineer with hands-on experience in schematic design, 
+                        PCB layout, and hardware validation. My passion lies in transforming complex electrical concepts 
+                        into tangible, manufacturable circuit boards.
+                    </p>
+                    <p class="about-detail">
+                        With expertise in industry-standard tools like <strong>Altium Designer</strong>, <strong>KiCad</strong>, 
+                        <strong>EasyEDA</strong>, and <strong>Proteus</strong>, I specialize in creating robust hardware solutions for environmental 
+                        monitoring systems, medical devices, and IoT applications. My approach combines theoretical knowledge 
+                        with practical testing to ensure reliable, production-ready designs.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">⚡</div>
+                            <div class="highlight-text">
+                                <h4>Design Excellence</h4>
+                                <p>Multi-layer PCB design with focus on signal integrity and power distribution</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🔬</div>
+                            <div class="highlight-text">
+                                <h4>Validation & Testing</h4>
+                                <p>Real-world testing and debugging to ensure optimal hardware performance</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🤝</div>
+                            <div class="highlight-text">
+                                <h4>Collaboration</h4>
+                                <p>Strong team player supporting product development from concept to production</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Col 2 Row 2: Info card -->
                 <div class="about-info">
                     <div class="info-card">
-                        <h3>PERSONAL INFO</h3>
+                        <h3>Personal Information</h3>
                         <div class="info-grid">
                             <div class="info-item">
-                                <span class="info-label">LOCATION</span>
+                                <span class="info-label">Location</span>
                                 <span class="info-value">Islamabad, Pakistan</span>
                             </div>
                             <div class="info-item">
-                                <span class="info-label">EMAIL</span>
-                                <span class="info-value"><a href="mailto:jibrankayani776@gmail.com">jibrankayani776@gmail.com</a></span>
+                                <span class="info-label">Email</span>
+                                <span class="info-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6d07040f1f0c03060c140c03045a5a5b2d0a000c0401430e0200">[email&#160;protected]</a></span>
                             </div>
                             <div class="info-item">
-                                <span class="info-label">PHONE</span>
+                                <span class="info-label">Phone</span>
                                 <span class="info-value">0309-9991997</span>
                             </div>
                             <div class="info-item">
-                                <span class="info-label">LINKEDIN</span>
-                                <span class="info-value"><a href="https://www.linkedin.com/in/jibran-gul-kayani-51051427b" target="_blank">linkedin.com/in/jibran-gul-kayani</a></span>
+                                <span class="info-label">LinkedIn</span>
+                                <span class="info-value"><a href="https://www.linkedin.com/in/jibran-gul-kayani-51051427b" target="_blank" style="color: var(--primary-color);">linkedin.com/in/jibran-gul-kayani</a></span>
                             </div>
                             <div class="info-item">
-                                <span class="info-label">CERTIFICATION</span>
+                                <span class="info-label">Certification</span>
                                 <span class="info-value">PEC Registered Engineer</span>
                             </div>
                             <div class="info-item">
-                                <span class="info-label">LANGUAGES</span>
+                                <span class="info-label">Languages</span>
                                 <span class="info-value">English (Professional), Urdu (Native)</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Full width row: Highlight cards -->
-                <div class="about-highlights">
-                    <div class="highlight-item">
-                        <div class="highlight-icon">⚡</div>
-                        <div class="highlight-text">
-                            <h4>Design Excellence</h4>
-                            <p>Multi-layer PCB design with focus on signal integrity and power distribution</p>
-                        </div>
-                    </div>
-                    <div class="highlight-item">
-                        <div class="highlight-icon">🔬</div>
-                        <div class="highlight-text">
-                            <h4>Validation &amp; Testing</h4>
-                            <p>Real-world testing and debugging to ensure optimal hardware performance</p>
-                        </div>
-                    </div>
-                    <div class="highlight-item">
-                        <div class="highlight-icon">🤝</div>
-                        <div class="highlight-text">
-                            <h4>Collaboration</h4>
-                            <p>Strong team player supporting product development from concept to production</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- EXPERIENCE -->
+    <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">PROFESSIONAL JOURNEY</span>
+                <span class="section-label">Professional Journey</span>
                 <h2 class="section-title">Work Experience</h2>
             </div>
             <div class="timeline">
@@ -192,11 +205,12 @@
                         </ul>
                         <div class="timeline-tags">
                             <span class="tag">Hardware Design</span>
-                            <span class="tag">Testing &amp; Validation</span>
+                            <span class="tag">Testing & Validation</span>
                             <span class="tag">Debugging</span>
                         </div>
                     </div>
                 </div>
+                
                 <div class="timeline-item" data-animate="right">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
@@ -221,335 +235,309 @@
         </div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">TECHNICAL EXPERTISE</span>
-                <h2 class="section-title">Skills &amp; Tools</h2>
+                <span class="section-label">Technical Expertise</span>
+                <h2 class="section-title">Skills & Tools</h2>
             </div>
-            <div class="terminal-skills-grid">
-                <div class="terminal-card">
-                    <div class="terminal-card-header">
-                        <span class="terminal-title">CAD_SOFTWARE</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.35"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🔌</div>
+                        <h3>Design Tools</h3>
                     </div>
-                    <ul class="terminal-list">
-                        <li>Altium Designer</li>
-                        <li>KiCad</li>
-                        <li>EasyEDA</li>
-                        <li>Proteus</li>
-                    </ul>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span class="skill-name">Altium Designer</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span class="skill-name">KiCad</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span class="skill-name">EasyEDA</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="terminal-card">
-                    <div class="terminal-card-header">
-                        <span class="terminal-title">SIMULATION</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.35"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">⚙️</div>
+                        <h3>Simulation Tools</h3>
                     </div>
-                    <ul class="terminal-list">
-                        <li>LTspice</li>
-                        <li>Proteus VSM</li>
-                        <li>Signal Analysis</li>
-                    </ul>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span class="skill-name">LTspice</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span class="skill-name">Proteus</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="terminal-card">
-                    <div class="terminal-card-header">
-                        <span class="terminal-title">PROTOTYPING</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.35"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+
+                <div class="skill-category full-width">
+                    <div class="category-header">
+                        <div class="category-icon">⚡</div>
+                        <h3>Technical Skills</h3>
                     </div>
-                    <ul class="terminal-list">
-                        <li>JLCPCB / PCBWay Workflow</li>
-                        <li>DFM / DFA Analysis</li>
-                        <li>BOM Optimization</li>
-                        <li>Stencil &amp; SMT Assembly</li>
-                    </ul>
-                </div>
-                <div class="terminal-card">
-                    <div class="terminal-card-header">
-                        <span class="terminal-title">PCB_DESIGN</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.35"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
+                    <div class="technical-skills">
+                        <span class="tech-pill">Schematic Capture</span>
+                        <span class="tech-pill">Circuit Design</span>
+                        <span class="tech-pill">Multilayer PCB Design</span>
+                        <span class="tech-pill">Power Electronics PCB</span>
+                        <span class="tech-pill">PCB Stack-up Design</span>
+                        <span class="tech-pill">Fabrication Files</span>
+                        <span class="tech-pill">PCB Debugging</span>
+                        <span class="tech-pill">Troubleshooting</span>
+                        <span class="tech-pill">Hardware Prototyping</span>
+                        <span class="tech-pill">Testing & Validation</span>
+                        <span class="tech-pill">SMD Soldering</span>
+                        <span class="tech-pill">Through-hole Soldering</span>
+                        <span class="tech-pill">Signal Integrity</span>
+                        <span class="tech-pill">Power Distribution</span>
                     </div>
-                    <ul class="terminal-list">
-                        <li>Schematic Capture</li>
-                        <li>Multilayer PCB Layout</li>
-                        <li>PCB Stack-up Design</li>
-                        <li>Signal Integrity</li>
-                        <li>Power Distribution</li>
-                    </ul>
-                </div>
-                <div class="terminal-card">
-                    <div class="terminal-card-header">
-                        <span class="terminal-title">HARDWARE</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.35"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/></svg>
-                    </div>
-                    <ul class="terminal-list">
-                        <li>Hardware Prototyping</li>
-                        <li>SMD / Through-hole Soldering</li>
-                        <li>PCB Debugging</li>
-                        <li>Testing &amp; Validation</li>
-                    </ul>
-                </div>
-                <div class="terminal-card">
-                    <div class="terminal-card-header">
-                        <span class="terminal-title">EMBEDDED_SYS</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.35"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M9 9h6v6H9z"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
-                    </div>
-                    <ul class="terminal-list">
-                        <li>Arduino / Sensor Interfacing</li>
-                        <li>I2C / SPI / UART / CAN</li>
-                        <li>Power Electronics PCB</li>
-                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">PORTFOLIO SHOWCASE</span>
+                <span class="section-label">Portfolio Showcase</span>
                 <h2 class="section-title">Featured Projects</h2>
             </div>
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card" data-project="1">
                     <div class="project-image">
-                        <div class="project-carousel" data-images='["3dbmsb.png","2dMSB.png","3dmsb.png"]'>
-                            <img class="carousel-img active" src="3dbmsb.png" alt="Mixed-Signal Controller Board">
-                            <img class="carousel-img" src="2dMSB.png" alt="Mixed-Signal Controller Board 2D">
-                            <img class="carousel-img" src="3dmsb.png" alt="Mixed-Signal Controller Board 3D">
-                            <div class="carousel-dots"><span class="cdot active"></span><span class="cdot"></span><span class="cdot"></span></div>
+                        <div class="project-placeholder" style="padding:0;overflow:hidden;">
+                            <img src="3dbmsb.png" alt="Mixed Signal Board" style="width:100%;height:100%;object-fit:contain;background:#0a1020;">
                         </div>
-                        <div class="project-overlay"><span class="project-tag">Advanced</span></div>
+                        <div class="project-overlay">
+                            <span class="project-tag">Advanced</span>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Mixed Signal Controller Board</h3>
-                        <p class="project-description">Schematics &amp; PCB layout for a sophisticated mixed-signal controller board with STM32F407 and multiple communication interfaces.</p>
+                        <h3 class="project-title">Mixed-Signal Central Controller Board</h3>
+                        <p class="project-description">
+                            Designed comprehensive schematics and PCB layout for a sophisticated mixed-signal controller 
+                            board integrating STM32F407 microcontroller with multiple communication interfaces.
+                        </p>
                         <div class="project-tech">
-                            <span class="tech-badge">STM32</span><span class="tech-badge">Mixed-Signal</span>
-                            <span class="tech-badge">CAN/USB</span><span class="tech-badge">Motor Control</span>
+                            <span class="tech-badge">STM32</span>
+                            <span class="tech-badge">Mixed-Signal</span>
+                            <span class="tech-badge">Communication</span>
+                            <span class="tech-badge">Motor Control</span>
                         </div>
-                        <button class="btn-details" onclick="event.stopPropagation(); openProjectModal(1)">Details</button>
                     </div>
                 </div>
                 <!-- Project 2 -->
                 <div class="project-card" data-project="2">
                     <div class="project-image">
-                        <div class="project-carousel" data-images='["3dMed.png","2dMED.png"]'>
-                            <img class="carousel-img active" src="3dMed.png" alt="Medical Monitoring System 3D">
-                            <img class="carousel-img" src="2dMED.png" alt="Medical Monitoring System 2D">
-                            <div class="carousel-dots"><span class="cdot active"></span><span class="cdot"></span></div>
+                        <div class="project-placeholder medical" style="padding:0;overflow:hidden;">
+                            <img src="3dMed.png" alt="Medical Monitoring System" style="width:100%;height:100%;object-fit:contain;background:#0a1020;">
                         </div>
-                        <div class="project-overlay"><span class="project-tag">Healthcare</span></div>
+                        <div class="project-overlay">
+                            <span class="project-tag">Healthcare</span>
+                        </div>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Medical Monitoring System</h3>
-                        <p class="project-description">Multi-sensor medical monitoring system using STM32L496ZET6 for real-time health data acquisition and processing.</p>
+                        <p class="project-description">
+                            Developed a comprehensive multi-sensor medical monitoring system using STM32L496ZET6 
+                            for real-time health data acquisition and processing.
+                        </p>
                         <div class="project-tech">
-                            <span class="tech-badge">STM32L4</span><span class="tech-badge">ECG</span>
-                            <span class="tech-badge">SpO2</span><span class="tech-badge">Real-time</span>
+                            <span class="tech-badge">STM32L4</span>
+                            <span class="tech-badge">Medical</span>
+                            <span class="tech-badge">Sensors</span>
+                            <span class="tech-badge">Real-time</span>
                         </div>
-                        <button class="btn-details" onclick="event.stopPropagation(); openProjectModal(2)">Details</button>
                     </div>
                 </div>
                 <!-- Project 3 -->
                 <div class="project-card" data-project="3">
                     <div class="project-image">
-                        <div class="project-illustration iot-illustration">
-                            <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" class="illus-svg">
-                                <defs>
-                                    <pattern id="grid3" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00ff8822" stroke-width="0.5"/></pattern>
-                                    <radialGradient id="glow3" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#667eea33"/><stop offset="100%" stop-color="#0f142000"/></radialGradient>
-                                </defs>
-                                <rect width="320" height="200" fill="#0f1420"/><rect width="320" height="200" fill="url(#grid3)"/>
-                                <ellipse cx="160" cy="100" rx="120" ry="80" fill="url(#glow3)"/>
-                                <rect x="120" y="72" width="80" height="56" rx="4" fill="#1a2540" stroke="#667eea" stroke-width="1.5"/>
-                                <rect x="128" y="80" width="64" height="40" rx="2" fill="#667eea22"/>
-                                <text x="160" y="100" text-anchor="middle" fill="#a78bfa" font-size="7" font-family="monospace" font-weight="bold">ESP32</text>
-                                <text x="160" y="111" text-anchor="middle" fill="#667eea" font-size="5.5" font-family="monospace">CAM MODULE</text>
-                                <path d="M148 68 Q160 58 172 68" fill="none" stroke="#00ff88" stroke-width="1.5" stroke-linecap="round" class="wifi-wave wifi1"/>
-                                <path d="M140 62 Q160 48 180 62" fill="none" stroke="#00ff88" stroke-width="1.2" stroke-linecap="round" class="wifi-wave wifi2" opacity="0.7"/>
-                                <path d="M133 56 Q160 38 187 56" fill="none" stroke="#00ff88" stroke-width="1" stroke-linecap="round" class="wifi-wave wifi3" opacity="0.4"/>
-                                <rect x="44" y="55" width="46" height="32" rx="4" fill="#1a2540" stroke="#f59e0b" stroke-width="1.2"/>
-                                <text x="67" y="68" text-anchor="middle" fill="#f59e0b" font-size="5.5" font-family="monospace">MQ-135</text>
-                                <text x="67" y="79" text-anchor="middle" fill="#fbbf24" font-size="5" font-family="monospace">CO2/LPG</text>
-                                <rect x="44" y="113" width="46" height="32" rx="4" fill="#1a2540" stroke="#ef4444" stroke-width="1.2"/>
-                                <text x="67" y="126" text-anchor="middle" fill="#ef4444" font-size="5.5" font-family="monospace">MH-Z19</text>
-                                <text x="67" y="137" text-anchor="middle" fill="#f87171" font-size="5" font-family="monospace">CO SENSOR</text>
-                                <rect x="230" y="76" width="46" height="48" rx="4" fill="#1a2540" stroke="#00d4ff" stroke-width="1.2"/>
-                                <circle cx="253" cy="96" r="12" fill="#0a1628" stroke="#00d4ff" stroke-width="1"/>
-                                <circle cx="253" cy="96" r="7" fill="#00d4ff22"/>
-                                <circle cx="253" cy="96" r="3" fill="#00d4ff"/>
-                                <text x="253" y="116" text-anchor="middle" fill="#00d4ff" font-size="5" font-family="monospace">CAM</text>
-                                <line x1="90" y1="71" x2="120" y2="88" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,2" opacity="0.7"/>
-                                <line x1="90" y1="129" x2="120" y2="112" stroke="#ef4444" stroke-width="1" stroke-dasharray="3,2" opacity="0.7"/>
-                                <line x1="200" y1="96" x2="230" y2="96" stroke="#00d4ff" stroke-width="1" stroke-dasharray="3,2" opacity="0.7"/>
-                                <circle cx="105" cy="80" r="2.5" fill="#f59e0b" class="pulse-dot p1"/>
-                                <circle cx="105" cy="120" r="2.5" fill="#ef4444" class="pulse-dot p2"/>
-                                <circle cx="215" cy="96" r="2.5" fill="#00d4ff" class="pulse-dot p3"/>
-                                <text x="160" y="185" text-anchor="middle" fill="#667eea" font-size="7" font-family="monospace" opacity="0.8">ENVIRONMENTAL SENSOR BOARD</text>
-                            </svg>
+                        <div class="project-placeholder iot" style="padding:0;overflow:hidden;">
+                            <img src="image.png" alt="Environmental Sensor Board" style="width:100%;height:100%;object-fit:contain;background:#0a1020;">
                         </div>
-                        <div class="project-overlay"><span class="project-tag">IoT</span></div>
+                        <div class="project-overlay">
+                            <span class="project-tag">IoT</span>
+                        </div>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Environmental Sensor Board</h3>
-                        <p class="project-description">Sensor consolidation board integrating multiple gas sensors and ESP-CAM module for smart environmental monitoring.</p>
+                        <p class="project-description">
+                            Designed a dedicated sensor consolidation board integrating multiple environmental 
+                            sensors with ESP-CAM module for smart monitoring applications.
+                        </p>
                         <div class="project-tech">
-                            <span class="tech-badge">ESP32</span><span class="tech-badge">MQ-135</span>
-                            <span class="tech-badge">MH-Z19</span><span class="tech-badge">CAM</span>
+                            <span class="tech-badge">ESP32</span>
+                            <span class="tech-badge">Sensors</span>
+                            <span class="tech-badge">Camera</span>
+                            <span class="tech-badge">IoT</span>
                         </div>
-                        <button class="btn-details" onclick="event.stopPropagation(); openProjectModal(3)">Details</button>
                     </div>
                 </div>
                 <!-- Project 4 -->
                 <div class="project-card" data-project="4">
                     <div class="project-image">
-                        <div class="project-carousel" data-images='["1_4.png","2dhms.png"]'>
-                            <img class="carousel-img active" src="1_4.png" alt="Smart Home System 3D">
-                            <img class="carousel-img" src="2dhms.png" alt="Smart Home System 2D">
-                            <div class="carousel-dots"><span class="cdot active"></span><span class="cdot"></span></div>
+                        <div class="project-placeholder smart-home" style="padding:0;overflow:hidden;">
+                            <img src="1_4.png" alt="Smart Home System" style="width:100%;height:100%;object-fit:contain;background:#0a1020;">
                         </div>
-                        <div class="project-overlay"><span class="project-tag">Smart Home</span></div>
+                        <div class="project-overlay">
+                            <span class="project-tag">Smart Home</span>
+                        </div>
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Smart Home Monitoring System</h3>
-                        <p class="project-description">ESP32-based smart home monitoring system with integrated environmental sensors for comprehensive home automation.</p>
+                        <p class="project-description">
+                            Designed and developed an ESP32-based smart home monitoring system with integrated 
+                            environmental sensors for comprehensive home automation.
+                        </p>
                         <div class="project-tech">
-                            <span class="tech-badge">ESP32</span><span class="tech-badge">Air Quality</span>
-                            <span class="tech-badge">Automation</span><span class="tech-badge">WiFi</span>
+                            <span class="tech-badge">ESP32</span>
+                            <span class="tech-badge">Air Quality</span>
+                            <span class="tech-badge">Automation</span>
+                            <span class="tech-badge">WiFi</span>
                         </div>
-                        <button class="btn-details" onclick="event.stopPropagation(); openProjectModal(4)">Details</button>
                     </div>
                 </div>
                 <!-- Project 5 -->
                 <div class="project-card" data-project="5">
                     <div class="project-image">
-                        <div class="project-carousel" data-images='["24pd3d.png","24pd.png"]'>
-                            <img class="carousel-img active" src="24pd3d.png" alt="Multi-Peripheral Control Board 3D">
-                            <img class="carousel-img" src="24pd.png" alt="Multi-Peripheral Control Board 2D">
-                            <div class="carousel-dots"><span class="cdot active"></span><span class="cdot"></span></div>
+                        <div class="project-placeholder power" style="padding:0;overflow:hidden;">
+                            <img src="24pd3d.png" alt="Multi-Peripheral Board" style="width:100%;height:100%;object-fit:contain;background:#0a1020;">
                         </div>
-                        <div class="project-overlay"><span class="project-tag">Power Electronics</span></div>
+                        <div class="project-overlay">
+                            <span class="project-tag">Power Electronics</span>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Multi Peripheral Control Board</h3>
-                        <p class="project-description">Robust power and control PCB supporting multiple peripherals with voltage regulation, protection, and power distribution.</p>
+                        <h3 class="project-title">Multi-Peripheral Control Board</h3>
+                        <p class="project-description">
+                            Designed a robust power and control PCB supporting multiple peripherals with emphasis 
+                            on voltage regulation, protection, and efficient power distribution.
+                        </p>
                         <div class="project-tech">
-                            <span class="tech-badge">24V/5V</span><span class="tech-badge">Buck Conv</span>
-                            <span class="tech-badge">Protection</span><span class="tech-badge">Multi-rail</span>
+                            <span class="tech-badge">Power Supply</span>
+                            <span class="tech-badge">Protection</span>
+                            <span class="tech-badge">Control</span>
+                            <span class="tech-badge">Multi-rail</span>
                         </div>
-                        <button class="btn-details" onclick="event.stopPropagation(); openProjectModal(5)">Details</button>
                     </div>
                 </div>
                 <!-- Project 6 -->
                 <div class="project-card" data-project="6">
                     <div class="project-image">
-                        <div class="project-illustration fyp-illustration">
-                            <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" class="illus-svg">
-                                <defs>
-                                    <pattern id="grid6" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00ff8818" stroke-width="0.5"/></pattern>
-                                    <radialGradient id="glow6" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#a8edea22"/><stop offset="100%" stop-color="#0f142000"/></radialGradient>
-                                    <linearGradient id="soilGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#92400e"/><stop offset="100%" stop-color="#78350f"/></linearGradient>
-                                </defs>
-                                <rect width="320" height="200" fill="#0f1420"/><rect width="320" height="200" fill="url(#grid6)"/>
-                                <ellipse cx="160" cy="100" rx="130" ry="80" fill="url(#glow6)"/>
-                                <circle cx="272" cy="38" r="16" fill="#fbbf24" opacity="0.9"/>
-                                <line x1="272" y1="16" x2="272" y2="10" stroke="#fbbf24" stroke-width="2" stroke-linecap="round"/>
-                                <line x1="272" y1="60" x2="272" y2="66" stroke="#fbbf24" stroke-width="2" stroke-linecap="round"/>
-                                <line x1="250" y1="38" x2="244" y2="38" stroke="#fbbf24" stroke-width="2" stroke-linecap="round"/>
-                                <line x1="294" y1="38" x2="300" y2="38" stroke="#fbbf24" stroke-width="2" stroke-linecap="round"/>
-                                <rect x="228" y="60" width="56" height="36" rx="3" fill="#1a3a5c" stroke="#fbbf24" stroke-width="1.5"/>
-                                <line x1="247" y1="60" x2="247" y2="96" stroke="#fbbf24" stroke-width="0.5" opacity="0.5"/>
-                                <line x1="265" y1="60" x2="265" y2="96" stroke="#fbbf24" stroke-width="0.5" opacity="0.5"/>
-                                <line x1="228" y1="72" x2="284" y2="72" stroke="#fbbf24" stroke-width="0.5" opacity="0.5"/>
-                                <line x1="228" y1="84" x2="284" y2="84" stroke="#fbbf24" stroke-width="0.5" opacity="0.5"/>
-                                <text x="256" y="108" text-anchor="middle" fill="#fbbf24" font-size="5" font-family="monospace">SOLAR</text>
-                                <rect x="118" y="68" width="84" height="54" rx="4" fill="#1a2540" stroke="#00ff88" stroke-width="1.5"/>
-                                <rect x="126" y="76" width="68" height="38" rx="2" fill="#00ff8811"/>
-                                <text x="160" y="94" text-anchor="middle" fill="#00ff88" font-size="7" font-family="monospace" font-weight="bold">ESP32</text>
-                                <text x="160" y="105" text-anchor="middle" fill="#6ee7b7" font-size="5" font-family="monospace">+ LoRa</text>
-                                <rect x="42" y="62" width="44" height="28" rx="3" fill="#1a2540" stroke="#10b981" stroke-width="1.2"/>
-                                <text x="64" y="74" text-anchor="middle" fill="#10b981" font-size="5.5" font-family="monospace">MOISTURE</text>
-                                <text x="64" y="84" text-anchor="middle" fill="#6ee7b7" font-size="5" font-family="monospace">SENSOR</text>
-                                <rect x="42" y="98" width="44" height="30" rx="2" fill="url(#soilGrad)" opacity="0.85"/>
-                                <line x1="55" y1="90" x2="55" y2="112" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
-                                <line x1="73" y1="90" x2="73" y2="118" stroke="#10b981" stroke-width="1.5" stroke-linecap="round"/>
-                                <circle cx="52" cy="107" r="2" fill="#00d4ff" opacity="0.7" class="drop d1"/>
-                                <circle cx="64" cy="115" r="2.5" fill="#00d4ff" opacity="0.7" class="drop d2"/>
-                                <circle cx="76" cy="110" r="2" fill="#00d4ff" opacity="0.7" class="drop d3"/>
-                                <rect x="42" y="140" width="30" height="36" rx="2" fill="#1a2540" stroke="#a78bfa" stroke-width="1.2"/>
-                                <line x1="57" y1="130" x2="57" y2="140" stroke="#a78bfa" stroke-width="1.5"/>
-                                <path d="M50 134 Q57 127 64 134" fill="none" stroke="#a78bfa" stroke-width="1.2" stroke-linecap="round" class="lora1"/>
-                                <path d="M46 130 Q57 120 68 130" fill="none" stroke="#a78bfa" stroke-width="1" stroke-linecap="round" class="lora2" opacity="0.6"/>
-                                <text x="57" y="163" text-anchor="middle" fill="#a78bfa" font-size="5" font-family="monospace">LoRa</text>
-                                <rect x="232" y="118" width="28" height="48" rx="4" fill="#1a2540" stroke="#00d4ff" stroke-width="1.2"/>
-                                <rect x="235" y="122" width="22" height="34" rx="1" fill="#00d4ff11"/>
-                                <rect x="238" y="125" width="16" height="10" rx="1" fill="#00ff8822"/>
-                                <circle cx="246" cy="159" r="2" fill="#00d4ff" opacity="0.5"/>
-                                <text x="246" y="173" text-anchor="middle" fill="#00d4ff" font-size="5" font-family="monospace">APP</text>
-                                <line x1="86" y1="76" x2="118" y2="88" stroke="#10b981" stroke-width="1" stroke-dasharray="3,2" opacity="0.7"/>
-                                <line x1="202" y1="88" x2="228" y2="78" stroke="#fbbf24" stroke-width="1" stroke-dasharray="3,2" opacity="0.7"/>
-                                <line x1="72" y1="140" x2="118" y2="118" stroke="#a78bfa" stroke-width="1" stroke-dasharray="3,2" opacity="0.6"/>
-                                <line x1="202" y1="105" x2="232" y2="130" stroke="#00d4ff" stroke-width="1" stroke-dasharray="3,2" opacity="0.6"/>
-                                <circle cx="102" cy="82" r="2.5" fill="#10b981" class="pulse-dot p1"/>
-                                <circle cx="215" cy="83" r="2.5" fill="#fbbf24" class="pulse-dot p2"/>
-                                <text x="160" y="187" text-anchor="middle" fill="#10b981" font-size="7" font-family="monospace" opacity="0.8">SOIL MOISTURE MONITORING - FYP</text>
+                        <div class="project-placeholder solar">
+                            <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+                                <circle cx="50" cy="35" r="10" fill="currentColor"/>
+                                <path d="M50 45v10M35 50h30M42 42l-5-5M58 42l5-5M42 58l-5 5M58 58l5 5" stroke="currentColor" stroke-width="2"/>
+                                <path d="M30 70h40v10H30z" stroke="currentColor" stroke-width="2" fill="none"/>
                             </svg>
                         </div>
-                        <div class="project-overlay"><span class="project-tag">FYP</span></div>
+                        <div class="project-overlay">
+                            <span class="project-tag">FYP</span>
+                        </div>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Soil Moisture Monitoring FYP</h3>
-                        <p class="project-description">Solar-powered FYP with LoRa wireless communication and cloud-based mobile app for soil moisture visualization.</p>
+                        <h3 class="project-title">Soil Moisture Monitoring System</h3>
+                        <p class="project-description">
+                            Final Year Project: Designed a solar-powered soil moisture monitoring system with 
+                            wireless communication and cloud-based data visualization.
+                        </p>
                         <div class="project-tech">
-                            <span class="tech-badge">Solar</span><span class="tech-badge">LoRa</span>
-                            <span class="tech-badge">ESP32</span><span class="tech-badge">Mobile App</span>
+                            <span class="tech-badge">Solar</span>
+                            <span class="tech-badge">IoT</span>
+                            <span class="tech-badge">Cloud</span>
+                            <span class="tech-badge">Mobile App</span>
                         </div>
-                        <button class="btn-details" onclick="event.stopPropagation(); openProjectModal(6)">Details</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">GET IN TOUCH</span>
+                <span class="section-label">Get In Touch</span>
                 <h2 class="section-title">Contact Me</h2>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Let's Work Together</h3>
-                    <p class="contact-description">Always interested in new projects and opportunities. Whether you have a question or just want to say hello — reach out!</p>
+                    <p class="contact-description">
+                        I'm always interested in hearing about new projects and opportunities. 
+                        Whether you have a question or just want to say hello, feel free to reach out!
+                    </p>
                     <div class="contact-methods">
-                        <a href="mailto:jibrankayani776@gmail.com" class="contact-method">
+                        <a href="/cdn-cgi/l/email-protection#13797a7161727d78726a727d7a24242553747e727a7f3d707c7e" class="contact-method">
                             <div class="method-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                             </div>
                             <div class="method-text">
-                                <span class="method-label">EMAIL</span>
-                                <span class="method-value">jibrankayani776@gmail.com</span>
+                                <span class="method-label">Email</span>
+                                <span class="method-value"><span class="__cf_email__" data-cfemail="42282b2030232c29233b232c2b75757402252f232b2e6c212d2f">[email&#160;protected]</span></span>
                             </div>
                         </a>
                         <a href="tel:+923099991997" class="contact-method">
                             <div class="method-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                             </div>
                             <div class="method-text">
-                                <span class="method-label">PHONE</span>
+                                <span class="method-label">Phone</span>
                                 <span class="method-value">0309-9991997</span>
                             </div>
                         </a>
                         <div class="contact-method">
                             <div class="method-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
                             </div>
                             <div class="method-text">
-                                <span class="method-label">LOCATION</span>
+                                <span class="method-label">Location</span>
                                 <span class="method-value">Islamabad, Pakistan</span>
                             </div>
                         </div>
@@ -557,31 +545,34 @@
                     <div class="contact-availability">
                         <div class="availability-indicator">
                             <span class="status-dot"></span>
-                            <span class="mono">STATUS: Available for New Opportunities</span>
+                            <span>Available for new opportunities</span>
                         </div>
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
+                    <!-- FIXED: subject field now uses name="title" to match EmailJS template -->
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
-                            <label for="name">// NAME</label>
-                            <input type="text" id="name" name="name" placeholder="your_name" required>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">// EMAIL</label>
-                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="subject">// SUBJECT</label>
-                            <input type="text" id="subject" name="title" placeholder="subject_line" required>
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="title" required>  <!-- CHANGED: name="title" to match EmailJS template -->
                         </div>
                         <div class="form-group">
-                            <label for="message">// MESSAGE</label>
-                            <textarea id="message" name="message" rows="5" placeholder="your_message_here..." required></textarea>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary" id="sendMessageBtn">
                             <span>Send Message</span>
-                            <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M18 2L9 11M18 2l-6 16-3-7-7-3 16-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M18 2L9 11M18 2l-6 16-3-7-7-3 16-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </button>
                     </form>
                 </div>
@@ -589,54 +580,45 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <span class="logo-name"><svg class="logo-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="8" y="8" width="8" height="8"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>Engineer</span>
+                        <span class="logo-name">JGK</span>
                     </div>
-                    <p class="mono">Crafting precision hardware solutions</p>
+                    <p>Crafting precision-engineered hardware solutions</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
-                        <h4>NAVIGATE</h4>
+                        <h4>Navigation</h4>
                         <a href="#home">Home</a>
                         <a href="#about">About</a>
                         <a href="#experience">Experience</a>
                     </div>
                     <div class="footer-column">
-                        <h4>PORTFOLIO</h4>
+                        <h4>Portfolio</h4>
                         <a href="#skills">Skills</a>
                         <a href="#projects">Projects</a>
                         <a href="#contact">Contact</a>
                     </div>
                     <div class="footer-column">
-                        <h4>CONNECT</h4>
-                        <a href="https://www.linkedin.com/in/jibran-gul-kayani-51051427b" target="_blank" class="footer-contact-link">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-                            LinkedIn
-                        </a>
-                        <a href="mailto:jibrankayani776@gmail.com" class="footer-contact-link">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
-                            jibrankayani776@gmail.com
-                        </a>
-                        <a href="tel:+923099991997" class="footer-contact-link">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-                            0309-9991997
-                        </a>
+                        <h4>Connect</h4>
+                        <a href="https://www.linkedin.com/in/jibran-gul-kayani-51051427b" target="_blank">LinkedIn</a>
+                        <a href="/cdn-cgi/l/email-protection#264c4f445447484d475f47484f11111066414b474f4a0845494b">Email</a>
+                        <a href="tel:+923099991997">Phone</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <span class="mono">&copy; 2026 Jibran Gul Kayani. All rights reserved.</span>
-                <span class="footer-certification mono">PEC Registered Engineer</span>
+                <span>&copy; 2026 Jibran Gul Kayani. All rights reserved.</span>
+                <span class="footer-certification">PEC Registered Engineer</span>
             </div>
         </div>
     </footer>
 
-    <!-- PROJECT MODAL -->
+    <!-- Project Modal (for detailed view) -->
     <div id="projectModal" class="modal">
         <div class="modal-overlay"></div>
         <div class="modal-container">
@@ -659,23 +641,42 @@
                     <div class="modal-gallery">
                         <h3>Gallery</h3>
                         <div class="gallery-grid"></div>
-                        <div class="gallery-placeholder" style="display:none;"><p>Images coming soon</p></div>
+                        <div class="gallery-placeholder" style="display: none;">
+                            <p>Images coming soon</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- LIGHTBOX -->
+    <!-- Lightbox for Image Zoom -->
     <div id="lightbox" class="lightbox">
         <div class="lightbox-overlay" onclick="closeLightbox()"></div>
         <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
         <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
         </button>
         <div class="lightbox-content">
             <img id="lightbox-img" src="" alt="">
             <div class="lightbox-caption" id="lightbox-caption"></div>
         </div>
         <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)">
-            <svg width="24" height="24" viewBox="0 0 24 24
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollTop">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M18 15l-6-6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="index.js"></script>
+</body>
+</html>
