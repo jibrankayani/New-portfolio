@@ -396,16 +396,22 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 12px;
-    border: 2px solid var(--trace-green);
-    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 10px 30px rgba(74, 158, 255, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: visible;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-    background: transparent;
+    overflow: hidden;
+    background: var(--bg-card);
     padding: 10px;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    cursor: default;
+}
+
+.pcb-layer.slide-active {
+    opacity: 1;
+    z-index: 2;
 }
 
 .pcb-image {
@@ -413,71 +419,13 @@ body {
     height: 100%;
     object-fit: contain;
     object-position: center;
-    border-radius: 10px;
-    transition: all 0.5s ease;
+    border-radius: 8px;
 }
 
-/* Stacked Paper Effect - Default State */
-.layer-top {
-    z-index: 3;
-    transform: translate(0, 0) rotate(0deg);
-    opacity: 1;
-}
-
-.layer-middle {
-    z-index: 2;
-    transform: translate(-15px, 20px) rotate(-3deg);
-    opacity: 0.8;
-}
-
-.layer-bottom {
-    z-index: 1;
-    transform: translate(-30px, 40px) rotate(-6deg);
-    opacity: 0.6;
-}
-
-/* Hover Effects - Each Layer Comes to Front */
-.pcb-layer:hover {
-    z-index: 10 !important;
-    transform: translate(0, -10px) rotate(0deg) scale(1.05);
-    opacity: 1 !important;
-    box-shadow: 0 30px 60px rgba(0, 255, 136, 0.5);
-}
-
-.pcb-layer:hover .pcb-image {
-    transform: scale(1.02);
-}
-
-/* When hovering, push other layers back */
-.pcb-card:has(.layer-top:hover) .layer-middle {
-    transform: translate(-20px, 30px) rotate(-5deg);
-    opacity: 0.5;
-}
-
-.pcb-card:has(.layer-top:hover) .layer-bottom {
-    transform: translate(-40px, 60px) rotate(-8deg);
-    opacity: 0.3;
-}
-
-.pcb-card:has(.layer-middle:hover) .layer-top {
-    transform: translate(20px, 30px) rotate(5deg);
-    opacity: 0.5;
-}
-
-.pcb-card:has(.layer-middle:hover) .layer-bottom {
-    transform: translate(-40px, 60px) rotate(-8deg);
-    opacity: 0.3;
-}
-
-.pcb-card:has(.layer-bottom:hover) .layer-top {
-    transform: translate(20px, 30px) rotate(5deg);
-    opacity: 0.5;
-}
-
-.pcb-card:has(.layer-bottom:hover) .layer-middle {
-    transform: translate(10px, 20px) rotate(3deg);
-    opacity: 0.5;
-}
+/* Remove old hover/stacked styles */
+.layer-top { z-index: 1; }
+.layer-middle { z-index: 1; }
+.layer-bottom { z-index: 1; }
 
 .component {
     position: absolute;
@@ -2248,5 +2196,20 @@ section {
 @media (max-width: 640px) {
     .terminal-skills-grid {
         grid-template-columns: 1fr !important;
+    }
+}
+
+/* Fix terminal skills on all screen sizes */
+@media (max-width: 1024px) {
+    .terminal-skills-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+@media (max-width: 640px) {
+    .terminal-skills-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .terminal-card {
+        padding: 1rem !important;
     }
 }
