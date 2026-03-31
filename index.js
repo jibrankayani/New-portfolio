@@ -125,7 +125,7 @@ if (contactForm) {
         sendBtn.innerHTML = '<span>Sending...</span>';
 
         // Send form data via EmailJS
-        emailjs.sendForm('service_vnxispf', 'template_14lzpki', this)
+        emailjs.sendForm('service_plure39', 'template_iz1coco', this)
             .then(function() {
                 sendBtn.innerHTML = '<span>✓ Message Sent!</span>';
                 sendBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
@@ -170,73 +170,69 @@ const projectData = {
         title: "Medical Monitoring System",
         icon: '❤️',
         gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-        description: "A multi-sensor medical monitoring PCB designed in Altium Designer, integrating vital sign acquisition modules with real-time data display using STM32L496ZET6.",
+        description: "A comprehensive medical-grade monitoring system capable of real-time acquisition and processing of vital signs.",
         features: [
-            "ECG 4 Click module for real-time electrocardiogram signal acquisition",
-            "MAX30102 module for heart rate and blood oxygen saturation (SpO2) monitoring",
-            "GY-906 infrared module for non-contact body temperature measurement",
-            "LCD display for on-board real-time data visualization",
-            "Camera module for patient visual monitoring",
-            "WiFi/BLE module for wireless data transmission"
+            "Real-time ECG signal acquisition with 12-bit resolution",
+            "Continuous heart rate monitoring using photoplethysmography (PPG)",
+            "Blood oxygen saturation (SpO2) measurement with ±2% accuracy",
+            "Low-power design for extended battery operation"
         ],
-        technologies: ["STM32L496ZET6", "ECG 4 Click", "MAX30102", "GY-906", "LCD", "WiFi/BLE", "Altium Designer"],
+        technologies: ["STM32L496ZET6", "ECG Frontend", "MAX30102", "SHT45", "KiCad"],
         gallery: ["3dMed.png", "2dMED.png"]
     },
     3: {
         title: "Environmental Sensor Board",
         icon: '🌱',
         gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-        description: "A dedicated sensor board designed in Altium Designer, consolidating multiple gas and environmental sensors for comprehensive air quality monitoring.",
+        description: "A comprehensive environmental monitoring solution integrating multiple gas sensors and camera module.",
         features: [
-            "MQ-6 sensor for LPG and combustible gas detection",
-            "MQ-7 sensor for carbon monoxide (CO) concentration monitoring",
-            "SCD40 module for accurate CO2 measurement",
-            "NTC thermistor for ambient temperature monitoring",
-            "ESP-CAM module for visual monitoring and image capture"
+            "Multi-gas detection including CO2, CO, and LPG concentrations",
+            "ESP32-CAM integration for visual monitoring and image capture",
+            "Real-time air quality index calculation and reporting",
+            "Low-power sleep modes for battery-operated deployment"
         ],
-        technologies: ["MQ-6", "MQ-7", "SCD40", "NTC Thermistor", "ESP-CAM", "Altium Designer"]
+        technologies: ["ESP32", "ESP-CAM", "MQ-135", "MH-Z19", "EasyEDA"]
     },
     4: {
         title: "Smart Home Monitoring System",
         icon: '🏠',
         gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
-        description: "An ESP32-based home monitoring system designed in EasyEDA, integrating environmental sensors for real-time temperature, humidity, and air quality tracking.",
+        description: "An intelligent home automation system providing comprehensive environmental monitoring and control.",
         features: [
-            "Real-time air quality monitoring using dedicated gas sensors",
-            "Temperature and humidity sensing for indoor climate tracking",
-            "ESP32 microcontroller for sensor data acquisition and processing",
-            "Compact PCB layout designed and routed in EasyEDA"
+            "Real-time air quality monitoring with particulate matter detection",
+            "Temperature and humidity sensing with ±0.5°C accuracy",
+            "IoT cloud integration for remote monitoring and control",
+            "Voice assistant integration (Alexa/Google Home compatible)"
         ],
-        technologies: ["ESP32", "EasyEDA"],
-        gallery: ["1_4.png", "2dhms.png"]
+        technologies: ["ESP32", "DHT22", "BME680", "Cloud IoT", "Altium Designer"],
+        gallery: ["1.4.png", "2dhms.png"]
     },
     5: {
         title: "Multi-Peripheral Control Board",
         icon: '⚡',
         gradient: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)',
-        description: "A robust power management and control PCB designed in Altium Designer, providing dual voltage rails to drive multiple peripherals simultaneously.",
+        description: "A robust power management and control solution designed to drive multiple peripherals.",
         features: [
-            "Dual output voltage rails: 24V and 5V for peripheral power distribution",
-            "High-efficiency buck converters with overcurrent protection",
-            "Individual short-circuit protection per output channel",
-            "Real-time current and voltage monitoring for each rail"
+            "Multiple independent voltage rails (3.3V, 5V, 12V, 24V)",
+            "High-efficiency buck/boost converters with >90% efficiency",
+            "Individual overcurrent and short-circuit protection per channel",
+            "Real-time current and voltage monitoring for each output"
         ],
-        technologies: ["24V Rail", "5V Rail", "Buck Converters", "Current Sensing", "Altium Designer"],
-        gallery: ["24pd3d.png", "24pd.png"]
+        technologies: ["Buck Converters", "LDO Regulators", "Current Sensing", "Protection Circuits", "KiCad"],
+        gallery: ["24pd.png", "24pd3d.png"]
     },
     6: {
         title: "Soil Moisture Monitoring System (FYP)",
         icon: '🌿',
         gradient: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
-        description: "Final Year Project: A solar-powered soil moisture monitoring system built using breadboards and veroboards, featuring wireless communication and a mobile app for remote data visualization.",
+        description: "Final Year Project: An innovative agriculture IoT solution combining solar power, wireless communication, and cloud computing.",
         features: [
-            "Solar-powered operation with battery backup for autonomous deployment",
-            "Multiple soil moisture sensors for zone-based field monitoring",
-            "Wireless communication for real-time data transmission",
-            "Mobile application for remote data visualization and alerts",
-            "Prototype built on breadboard and veroboard — no custom PCB"
+            "Solar-powered autonomous operation with battery backup",
+            "Multiple soil moisture sensors for zone-based monitoring",
+            "LoRa wireless communication for long-range data transmission",
+            "Cloud-based data storage and analytics platform"
         ],
-        technologies: ["ESP32", "Solar Power", "Soil Sensors", "Wireless Comms", "Mobile App"]
+        technologies: ["ESP32", "LoRa", "Solar Power", "Cloud Platform", "Altium Designer"]
     }
 };
 
@@ -331,8 +327,8 @@ if (profileImage) {
 }
 
 // ========== CONSOLE EASTER EGG ==========
-console.log('%c👋 Hello, Developer!', 'font-size: 24px; color: #4a9eff; font-weight: bold;');
-console.log('%cEmail: jibrankayani776@gmail.com', 'font-size: 14px; color: #7ec8e3;');
+console.log('%c👋 Hello, Developer!', 'font-size: 24px; color: #00ff88; font-weight: bold;');
+console.log('%cEmail: jibrankayani776@gmail.com', 'font-size: 14px; color: #00d4ff;');
 
 // ========== REMOVED HEAVY ANIMATIONS (particle, cursor trail) ==========
 // You can re-enable them later if you want – they were causing performance issues.
@@ -431,156 +427,15 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// ========== PROJECT CARD CAROUSEL (AUTO SLIDESHOW) ==========
-function initCarousels() {
-    document.querySelectorAll('.project-carousel').forEach(carousel => {
-        const imgs = carousel.querySelectorAll('.carousel-img');
-        const dots = carousel.querySelectorAll('.cdot');
-        if (imgs.length <= 1) return;
-
-        let idx = 0;
-
-        function goTo(i) {
-            imgs[idx].classList.remove('active');
-            dots[idx].classList.remove('active');
-            idx = (i + imgs.length) % imgs.length;
-            imgs[idx].classList.add('active');
-            dots[idx].classList.add('active');
-        }
-
-        // Auto-advance every 3 seconds
-        setInterval(() => goTo(idx + 1), 3000);
-
-        // Dot click
-        dots.forEach((dot, i) => {
-            dot.addEventListener('click', (e) => {
-                e.stopPropagation();
-                goTo(i);
-            });
-        });
-    });
-}
-
-initCarousels();
-
-// ========== HERO TYPING ANIMATION ==========
+// ===== HERO PCB SLIDESHOW =====
 (function() {
-    const phrases = [
-        'Multi-layer PCB Design',
-        'Mixed-Signal Board Design',
-        'Schematic Capture',
-        'Power Electronics PCB',
-        'Hardware Validation',
-        'PCB Stack-up & DFM'
-    ];
-    let phraseIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    const el = document.getElementById('heroTyping');
-    if (!el) return;
-
-    function type() {
-        const current = phrases[phraseIndex];
-        if (isDeleting) {
-            el.textContent = current.substring(0, charIndex--);
-        } else {
-            el.textContent = current.substring(0, charIndex++);
-        }
-
-        let delay = isDeleting ? 40 : 80;
-
-        if (!isDeleting && charIndex === current.length + 1) {
-            delay = 1800;
-            isDeleting = true;
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            phraseIndex = (phraseIndex + 1) % phrases.length;
-            delay = 400;
-        }
-        setTimeout(type, delay);
-    }
-    setTimeout(type, 1000);
-})();
-
-// ========== SUBTLE PARTICLE BACKGROUND ==========
-(function() {
-    const canvas = document.getElementById('circuit-canvas');
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    let W, H, pts = [];
-
-    function resize() {
-        W = canvas.width = window.innerWidth;
-        H = canvas.height = window.innerHeight;
-        init();
-    }
-
-    function init() {
-        pts = [];
-        const count = Math.floor((W * H) / 18000);
-        for (let i = 0; i < count; i++) {
-            pts.push({
-                x: Math.random() * W,
-                y: Math.random() * H,
-                vx: (Math.random() - 0.5) * 0.25,
-                vy: (Math.random() - 0.5) * 0.25,
-                r: 1 + Math.random() * 1.2
-            });
-        }
-    }
-
-    function draw() {
-        ctx.clearRect(0, 0, W, H);
-        // Move
-        pts.forEach(p => {
-            p.x += p.vx; p.y += p.vy;
-            if (p.x < 0) p.x = W;
-            if (p.x > W) p.x = 0;
-            if (p.y < 0) p.y = H;
-            if (p.y > H) p.y = 0;
-        });
-        // Connect nearby
-        for (let i = 0; i < pts.length; i++) {
-            for (let j = i + 1; j < pts.length; j++) {
-                const dx = pts[i].x - pts[j].x;
-                const dy = pts[i].y - pts[j].y;
-                const dist = Math.sqrt(dx*dx + dy*dy);
-                if (dist < 120) {
-                    ctx.beginPath();
-                    ctx.moveTo(pts[i].x, pts[i].y);
-                    ctx.lineTo(pts[j].x, pts[j].y);
-                    ctx.strokeStyle = `rgba(74,158,255,${0.12 * (1 - dist/120)})`;
-                    ctx.lineWidth = 0.6;
-                    ctx.stroke();
-                }
-            }
-        }
-        // Draw dots
-        pts.forEach(p => {
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(74,158,255,0.25)';
-            ctx.fill();
-        });
-        requestAnimationFrame(draw);
-    }
-
-    window.addEventListener('resize', resize);
-    resize();
-    draw();
-})();
-
-// ========== PCB CARD HERO SLIDESHOW ==========
-(function() {
-    const layers = document.querySelectorAll('.pcb-card .pcb-layer');
+    const layers = Array.from(document.querySelectorAll('.pcb-card .pcb-layer'));
     if (!layers.length) return;
     let current = 0;
 
     function showSlide(idx) {
         layers.forEach((l, i) => {
-            l.classList.remove('slide-active', 'slide-prev');
-            if (i === idx) l.classList.add('slide-active');
-            else if (i === (idx - 1 + layers.length) % layers.length) l.classList.add('slide-prev');
+            l.classList.toggle('slide-active', i === idx);
         });
     }
 
@@ -588,5 +443,5 @@ initCarousels();
     setInterval(() => {
         current = (current + 1) % layers.length;
         showSlide(current);
-    }, 2800);
+    }, 2000);
 })();
